@@ -1,0 +1,38 @@
+.jumbotron {
+  margin: 0px;
+  border-radius: 0px;
+  background: linear-gradient(0deg, rgba(7,203,79,0.4), rgba(7,203,79,0.4)), url('../../assets/general2.jpg') no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+  min-height: 95vh;
+}
+
+.skill-panel {
+  padding: 5% 10% 5% 10%;
+  background-color: transparent;
+  min-height: 60vh;
+
+}
+
+h1 {
+  color: #FFFFFF;
+}
+
+hr {
+  border-color: #FFFFFF;
+}
+
+.card-group {
+  padding: none;
+}
+
+.card {
+  border: none;
+}
+
+.skill-panel {
+  background-color: rgba(255,255,255,1);
+  border: none;
+}

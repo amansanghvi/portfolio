@@ -1,0 +1,114 @@
+.jumbotron {
+  margin: 0px;
+  border-radius: 0px;
+  width: 100%;
+  padding: 0px;
+  border-bottom: 10px solid #FFFFFF;
+}
+.dashboard {
+  background: url('../../assets/me1.jpg') no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        min-height: 95vh;
+  border-radius: 0px;
+}
+
+.inside {
+  color: #FFFFFF;
+}
+
+.intro {
+  left:5%;
+  width: 90%;
+  position: absolute;
+  bottom: 10%;
+}
+
+.description {
+  background-color: #FFFFFF;
+  font-size: 100%;
+  color: #07aaf5;
+  padding: 2% 2% 2% 2%;
+  border-radius: 10px;
+}
+
+h1 {
+  font-size: 500%;
+  color: #FFFFFF;
+  font-family: "Open Sans",sans-serif;
+  opacity: 1;
+}
+
+h3 {
+  color: #FFFFFF;
+  font-family: "Open Sans",sans-serif;
+}
+
+hr {
+  border-color: #FFFFFF;
+  margin: 0;
+}
+
+.slide-left-right
+{
+text-decoration:none;
+display: inline-block;
+color: #FFFFFF;
+}
+/* add a empty string after the elment with class .slide-left-right */
+.slide-left-right:after
+{
+content: '';
+display: block;
+height: 3px;
+width: 0;
+background: transparent;
+transition: width .5s ease, background-color .5s ease; /* .5 seonds for changes to the width and background-color */
+-webkit-transition: width .5s ease, background-color .5s ease; /* Chrome and Safari */
+-moz-transition: width .5s ease, background-color .5s ease; /* FireFox */
+}
+/* Change the width and background on hover, aka sliding out */
+.slide-left-right:hover:after
+{
+width: 100%;
+background: #FFFFFF;
+}
+
+.arrow {
+  background-color: #FFFFFF;
+  border: none;
+  color: #007bff;
+  width: 100%;
+  transition: all 0.5s;
+  cursor: pointer;
+  text-align: right;
+}
+
+.arrow {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  background-color: #FFFFFF;
+}
+
+.arrow:after {
+  content: '\00a0»';
+  position: inline-block;
+  opacity: 0;
+  top: 14px;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.arrow:hover{
+  padding-right: 24px;
+  padding-left:8px;
+}
+
+.arrow:hover:after {
+  opacity: 1;
+  right: 10px;
+}

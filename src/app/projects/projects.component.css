@@ -1,0 +1,29 @@
+.jumbotron {
+  background: url('../../assets/pcb1.jpg') no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+  min-height: 95vh;
+  margin: 0px;
+  border-radius: 0px;
+  border-bottom: 10px solid #FFFFFF;
+}
+
+h1 {
+  color: #FFFFFF;
+}
+
+.card {
+  border-radius: 0px;
+  background-color: rgba(50, 50, 50, 0.7);
+  color: #FFFFFF;
+}
+
+.icon {
+  padding-top: 3%;
+}
+
+hr {
+  border-color: #FFFFFF;
+}

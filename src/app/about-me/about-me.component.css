@@ -1,0 +1,31 @@
+.jumbotron {
+  background: url('../../assets/computer1.jpg') no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        min-height: 95vh;
+  border-radius: 0px;
+  margin: 0px;
+  color: #FFFFFF;
+  min-height: 0.9vh;
+  border-bottom: 10px solid #FFFFFF;
+}
+h1 {
+  padding-bottom: 2%;
+}
+
+hr {
+  border-color: #FFFFFF;
+}
+
+.card {
+  border-radius: 0px;
+  background-color: #07aaf5;
+  opacity: 0.9;
+  color: #FFFFFF;
+}
+
+.icon {
+  padding-top: 3%;
+}
