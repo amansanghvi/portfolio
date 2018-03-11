@@ -9,10 +9,7 @@
     I am currently looking for an opportunity to use the skills I have developed, and my passion, to make a meaningful difference
     and deliver value to people through innovation.
     <br>
-    <a class="arrow" *ngIf="!isOpen; else closed" (click)="toggleOpen()"><b>Learn more about me</b></a>
-    <ng-template #closed>
-      <a class="arrow-up" (click)="toggleOpen()"><b>Hide Panels</b></a>
-    </ng-template>
+    <a class="arrow" (click)="toggleOpen()"><b id="pane-toggle">Learn more about me</b></a>
   </p>
   <app-about-cards style="display:none"></app-about-cards>
 <br>

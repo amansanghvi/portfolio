@@ -10,18 +10,27 @@ import * as $ from 'jquery';
 export class AboutMeComponent implements OnInit {
 
   isOpen = false;
-  state = 'open';
+  closedText = "Learn more about me";
+  openText = "Hide Panels"
+
   constructor() { }
 
   ngOnInit() {
   }
 
   toggleOpen()  {
-    this.isOpen = $("app-about-cards").is(":visible");
-    $("app-about-cards").slideToggle(400);
+    this.isOpen = !$("app-about-cards").is(":hidden");
+    if(this.isOpen) {
+      $("app-about-cards").slideUp();
+      $("#pane-toggle").parent().removeClass("arrow-up").addClass("arrow");
+      $("#pane-toggle").text(this.closedText);
+    } else {
+      $("app-about-cards").slideDown();
+      $("#pane-toggle").parent().removeClass("arrow").addClass("arrow-up");
+      $("#pane-toggle").text(this.openText);
+    }
+    this.isOpen = !this.isOpen;
+
   }
 
-  animate() {
-      this.state = (this.state == 'open') ? 'closed' : 'open';
-  }
 }
