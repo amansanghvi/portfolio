@@ -9,6 +9,14 @@ h5 {
   background-color: #07aaf5;
   opacity: 0.9;
   color: #FFFFFF;
+  transition: all .2s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.15);
+  -webkit-box-shadow: 3px 3px 5px 6px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow:    3px 3px 5px 6px rgba(0, 0, 0, 0.4);
+  box-shadow:         3px 3px 5px 6px rgba(0, 0, 0, 0.4);
 }
 
 .icon {

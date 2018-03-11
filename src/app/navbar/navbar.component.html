@@ -5,10 +5,10 @@
   <a class="navbar-brand slide-left-right" [ngx-scroll-to]="'dashboard'">Aman Sanghvi</a>
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav" id="nav-list">
-      <a class="nav-item nav-link slide-left-right" [ngx-scroll-to]="'dashboard'">Home<span class="sr-only">(current)</span></a>
-      <a class="nav-item nav-link slide-left-right" [ngx-scroll-to]="'about-me'" (click)="openMe()">About me</a>
-      <a class="nav-item nav-link slide-left-right" [ngx-scroll-to]="'projects'">Projects</a>
-      <a class="nav-item nav-link slide-left-right" [ngx-scroll-to]="'skills'">Skills</a>
+      <a class="nav-item nav-link slide-left-right" [ngx-scroll-to]="'dashboard'" href="#dashboard" onclick="return false;">Home<span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link slide-left-right" [ngx-scroll-to]="'about-me'" (click)="openMe()" href="#about-me" onclick="return false;">About me</a>
+      <a class="nav-item nav-link slide-left-right" [ngx-scroll-to]="'projects'" href="#projects" onclick="return false;">Projects</a>
+      <a class="nav-item nav-link slide-left-right" [ngx-scroll-to]="'skills'" href="#skills" onclick="return false;">Skills</a>
     </div>
   </div>
   <div class="collapse navbar-collapse justify-content-end">

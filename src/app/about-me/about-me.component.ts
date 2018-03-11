@@ -9,7 +9,7 @@ import * as $ from 'jquery';
 })
 export class AboutMeComponent implements OnInit {
 
-  isOpen = true;
+  isOpen = false;
   state = 'open';
   constructor() { }
 
@@ -17,7 +17,7 @@ export class AboutMeComponent implements OnInit {
   }
 
   toggleOpen()  {
-    this.isOpen = !this.isOpen;
+    this.isOpen = $("app-about-cards").is(":visible");
     $("app-about-cards").slideToggle(400);
   }
 
