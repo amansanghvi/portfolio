@@ -1,16 +1,59 @@
 <footer id="myFooter">
     <div class="container">
         <ul>
-            <li><a href="#">Company Information</a></li>
-            <li><a href="#">Contact us</a></li>
-            <li><a href="#">Reviews</a></li>
-            <li><a href="#">Terms of service</a></li>
+            <li><a><button type="button" class="hire-me" data-toggle="modal" data-target="#contactModal">Contact me</button></a></li>
+            <li><a [ngx-scroll-to]="'dashboard'" id="go-top">Back To Top</a></li>
+            <li><a><button type="button" class="hire-me" data-toggle="modal" data-target="#hireModal">Hire Me</button></a></li>
         </ul>
-    <p class="footer-copyright">© 2016 Copyright Text</p>
+    <p class="footer-copyright">Thanks for visiting!</p>
     </div>
+
     <div class="footer-social">
-        <a href="#" class="social-icons"><i class="fa fa-facebook"></i></a>
-        <a href="#" class="social-icons"><i class="fa fa-google-plus"></i></a>
-        <a href="#" class="social-icons"><i class="fa fa-twitter"></i></a>
+        <a href="{{mail}}" class="social-icons slide-left-right"><i class="fas fa-envelope fa-2x"></i></a>
+        &emsp;&nbsp;<a href="{{linkedin}}" class="social-icons slide-left-right"><i class="fab fa-linkedin fa-2x"></i></a>
+        &emsp;&nbsp;<a href="{{github}}" class="social-icons slide-left-right"><i class="fab fa-github fa-2x"></i></a>
     </div>
 </footer>
+
+
+<div class="modal fade" id="hireModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Hire Me!</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body text-center">
+        <a href="{{mail}}" style="color:red">
+          <i class="fas fa-heart fa-7x"></i>
+        </a>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModal" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Contact Me</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" style="color:red">
+        Mail: <a href="{{mail}}">amansanghvi@outlook.com.au</a><br>
+        Phone: <a href="tel:0401769027">+61 401 769 027</a><br>
+        LinkedIn: <a href="{{linkedin}}">www.linkedin.com/in/aman-sanghvi-302</a><br>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>

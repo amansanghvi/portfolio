@@ -12,11 +12,25 @@
 
 h1 {
   color: #FFFFFF;
+  font-family: "Mina",sans-serif;
+}
+
+p {
+  font-family: "Play", sans-serif;
+}
+
+h5 {
+  font-family: "Cinzel",sans-serif;
+  border-bottom: 1px solid #FFFFFF;
+}
+
+.card-text {
+  font-family: 'Mina', sans-serif;
 }
 
 .card {
   border-radius: 0px;
-  background-color: rgba(50, 50, 50, 0.7);
+  background-color: rgba(50, 50, 50, 0.9);
   color: #FFFFFF;
 }
 
@@ -26,4 +40,17 @@ h1 {
 
 hr {
   border-color: #FFFFFF;
+}
+
+.card-text > b {
+  font-weight: bolder;
+  font-size: 110%;
+}
+
+.right {
+  border-left: 5px solid #FFFFFF;
+}
+
+.left {
+  border-right: 5px solid #FFFFFF;
 }

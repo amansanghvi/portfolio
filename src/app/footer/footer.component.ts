@@ -8,6 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class FooterComponent implements OnInit {
 
   constructor() { }
+  github = "https://github.com/chboblie";
+  mail = "mailto:amansanghvi@outlook.com.au";
+  linkedin = "https://www.linkedin.com/in/aman-sanghvi-302";
 
   ngOnInit() {
   }

@@ -1,1 +1,33 @@
-
+<nav class="navbar navbar-expand-md navbar-dark fixed-top" id="navbar">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand slide-left-right" [ngx-scroll-to]="'dashboard'">Aman Sanghvi</a>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav" id="nav-list">
+      <a class="nav-item nav-link slide-left-right" [ngx-scroll-to]="'dashboard'">Home<span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link slide-left-right" [ngx-scroll-to]="'about-me'" (click)="openMe()">About me</a>
+      <a class="nav-item nav-link slide-left-right" [ngx-scroll-to]="'projects'">Projects</a>
+      <a class="nav-item nav-link slide-left-right" [ngx-scroll-to]="'skills'">Skills</a>
+    </div>
+  </div>
+  <div class="collapse navbar-collapse justify-content-end">
+    <div class="navbar-nav right">
+      <div class="navbar-brand">
+        <a href="{{mail}}" class="slide-left-right">
+          <i class="fas fa-envelope fa-2x"></i>
+        </a>
+      </div>
+      <div class="navbar-brand">
+        <a href="{{linkedin}}" class="slide-left-right">
+          <i class="fab fa-linkedin fa-2x"></i>
+        </a>
+      </div>
+      <div class="navbar-brand">
+        <a href="{{github}}" class="slide-left-right">
+          <i class="fab fa-github fa-2x"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>

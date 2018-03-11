@@ -1,0 +1,16 @@
+h5 {
+  font-family: "Cinzel",sans-serif;
+  text-align: center;
+  border-bottom: 1px solid #FFFFFF;
+}
+
+.card {
+  border-radius: 0px;
+  background-color: #07aaf5;
+  opacity: 0.9;
+  color: #FFFFFF;
+}
+
+.icon {
+  padding-top: 3%;
+}

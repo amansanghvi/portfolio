@@ -1,81 +1,20 @@
-<div class="jumbotron" name="about-me">
-  <h1 class="text-center">About Me <hr></h1>
-
-  <div class="card-deck">
-    <div class="card">
-      <div class="text-center icon">
-        <i class="fas fa-star fa-7x"></i>
-      </div>
-      <div class="card-body">
-        <h5 class="card-title">Experience</h5>
-        <p class="card-text">
-          <i class="fas fa-briefcase fa-xs"></i>
-          <b>IBM</b>
-          <br>Software Developer Intern
-          <br>Feb 2018 - Now
-        </p>
-        <p class="card-text">
-          <i class="fas fa-briefcase fa-xs"></i>
-          <b>HCF</b>
-          <br>Content Developer
-          <br>Jul 2017 - Nov 2017
-        </p>
-        <p class="card-text">
-          <i class="fas fa-briefcase fa-xs"></i>
-          <b>CSOne Academy</b>
-          <br>Teacher/Assistant
-          <br>Jul 2016 - Jan 2018
-        </p>
-      </div>
-    </div>
-    <div class="card">
-      <div class="text-center icon">
-        <i class="fas fa-graduation-cap fa-7x"></i>
-      </div>
-      <div class="card-body">
-        <h5 class="card-title">Education</h5>
-        <p class="card-text">
-          <i class="fas fa-graduation-cap fa-xs"></i>
-          <b>UNSW</b>
-          <br>2016 - 2020
-        </p>
-        <p class="card-text">
-          Bachelors of Engineering (Mechatronics) / Computer Science (Artificial Intelligence)
-        </p>
-        <p>
-           High Distinction Average
-        </p>
-        <p class="card-text">
-          <i class="fas fa-graduation-cap fa-xs"></i>
-          <b>Udemy</b>
-          <br>2017
-        </p>
-        <p class="card-text">
-          Online course on Machine Learning in Python
-        </p>
-      </div>
-    </div>
-    <div class="card">
-      <div class="text-center icon">
-        <i class="fas fa-street-view fa-7x"></i>
-      </div>
-      <div class="card-body">
-        <h5 class="card-title">Extracurriculars</h5>
-        <p class="card-text">
-          <i class="fas fa-street-view fa-xs"></i>
-          <b>President</b>
-          <br>UNSW Mechatronics Society
-          <br>Sep 2017 - now
-        </p>
-        <p class="card-text">
-          <i class="fas fa-street-view fa-xs"></i>
-          <b>2nd Year Representative</b>
-          <br>UNSW Mechatronics Society
-          <br> Sep 2016 - Sep 2017
-        </p>
-      </div>
-    </div>
-  </div>
+<div class="jumbotron">
+  <h1 class="text-center">About Me<hr></h1>
+  <p class="description">
+    Hi, I'm Aman. I am a third-year engineering/computer science student at UNSW.
+    I have a passion for software development and robotics - a passion which I have developed and built upon through my
+    <a (click)="toggleOpen()"><b><u>work and my experience</u></b></a>. Through chasing my passion, I have gained invaluable
+    <a [ngx-scroll-to]="'skills'"><b><u>skills</u></b></a> and experiences that have
+    furthered my ability to <a [ngx-scroll-to]="'projects'"><b><u>innovate</u></b></a> and find solutions. I enjoy working with others to solve problems and help others.
+    I am currently looking for an opportunity to use the skills I have developed, and my passion, to make a meaningful difference
+    and deliver value to people through innovation.
+    <br>
+    <a class="arrow" *ngIf="!isOpen; else closed" (click)="toggleOpen()"><b>Learn more about me</b></a>
+    <ng-template #closed>
+      <a class="arrow-up" (click)="toggleOpen()"><b>Hide Panels</b></a>
+    </ng-template>
+  </p>
+  <app-about-cards></app-about-cards>
 <br>
 
 </div>
